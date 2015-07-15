@@ -8,6 +8,8 @@ module.exports = function(app) {
 	//设置日志级别
 	io.set('log level', 1);
 
+
+    console.log('ffffff');
 	//监听链接事件
 	io.on('connection', function(socket){
 		//通知客户端已连接
@@ -21,12 +23,21 @@ module.exports = function(app) {
 			socket: socket,
 			name: false,
 			headimg: false,
-			isSignin: false,
+			isSignin: true,
 		}
+
+
+		socket.on('msg', function(msg) {
+			console.log(msg);
+		})
 
 		socket.on('signin', function(msg){
 
 		});
+
+		socket.on('setName', function(msg){
+			client.name = msg;
+		})
 
 		socket.on('message', function(msg){
 			if(isSignin){

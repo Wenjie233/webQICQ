@@ -1,0 +1,20 @@
+<ion-view view-title="{{chat.title}}">
+  <ion-content delegate-handle="mainScroll" class="has-footer">
+    <div class="list list-chat">
+    	<div class="item {{[me.name, msg.name]|isMe}} item-chat" ng-repeat="msg in chat.msgs">
+	      <img src="{{msg.headimg}}">
+	      <p>{{msg.name}} <span>{{msg.time}}</span></p>
+	      <h2>{{msg.msg}}</h2>
+	    </div>
+    </div>
+  </ion-content>
+  <div class="bar bar-footer item-input-inset">
+  <label class="item-input-wrapper">
+    <i class="icon ion-ios7-search placeholder-icon"></i>
+    <input type="text" placeholder="请输入信息" ng-model="myMsg">
+  </label>
+  <button class="button button-clear" ng-click="sendMsg()">
+    发送
+  </button>
+</div>
+</ion-view>

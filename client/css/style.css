@@ -1,0 +1,39 @@
+/* Empty. Add your own CSS if you like */
+.time {
+	font-size: 10px;
+	color: #dedede;
+}
+
+.chat-room-title {
+	line-height: 33px;
+	font-size: 20px !important;
+}
+
+.item-menu-head {
+  	text-align: center;
+}
+.item-menu-head img {
+	width: 150px;
+	border-radius: 2px;
+	margin-bottom: 10px;
+}
+
+.item-menu-head h2 {
+	font-size: 25px;
+}
+
+.list-chat {
+	margin-bottom: 44px;
+}
+
+.item-chat {
+	border: 0 !important;
+}
+
+.red {
+	color:rgb(237, 11, 11) !important;
+}
+
+.chat-block {
+	height: 44px;
+}

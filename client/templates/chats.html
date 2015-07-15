@@ -1,0 +1,14 @@
+<ion-view view-title="聊天室列表">
+  <ion-content>
+	<div class="list">
+	    <a class="item item-thumbnail-left" ng-repeat="chat in chats" href="#/app/chats/{{chat.id}}">
+	      <img src="{{chat.titleimg}}">
+	      <h2 class="chat-room-title">{{chat.title}}</h2>
+	      <p>{{chat.description}}</p>
+
+	      <p class="red">{{chat.currentMsg}}</p>
+	    </a>
+	 
+	</div>
+  </ion-content>
+</ion-view>
